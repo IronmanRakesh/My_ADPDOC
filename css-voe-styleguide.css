@@ -1,0 +1,165 @@
+:root {
+    --alto: #d9d9d9;
+    --background-blue-gray: #eef4fe;
+    --black: #000000;
+    --button: #2f6cfe;
+    --cultured-pearl: #f7f6f4;
+    --deep-cove: #050d38;
+    --eyebrows: #be534e;
+    --text-headings: #121c4e;
+    --text-paragraph: #383d58;
+    --text-paragraph-secondary: #696d87;
+    --white: #ffffff;
+  
+    --font-size-l: 16px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 25px;
+    --font-size-xxxl: 30px;
+    --font-size-xxxxl: 36px;
+  
+    --font-family-taub_sans-bold: "ADP Taub", "Segoe UI", "Source Sans Pro",
+      Calibri, Candara, Arial, sans-serif;
+    --font-family-taub_sans-regular: "ADP Taub", "Segoe UI", "Source Sans Pro",
+      Calibri, Candara, Arial, sans-serif;
+  }
+  .taubsans-bold-oxford-blue-14px {
+    color: var(--text-paragraph);
+    font-family: var(--font-family-taub_sans-bold);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .taubsans-regular-oxford-blue-14px {
+    color: var(--text-paragraph);
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-l);
+    font-weight: 400;
+    line-height: 23px;
+  }
+  
+  .taubsans-regular-normal-oxford-blue-14px {
+    color: var(--text-paragraph);
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+  }
+  
+  .taubsans-regular-normal-oxford-blue-16px {
+    color: var(--text-paragraph);
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-xl);
+    font-weight: 400;
+    line-height: 25px;
+  }
+  
+  .taubsans-bold-white-16px {
+    color: var(--white);
+    font-family: var(--font-family-taub_sans-bold);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 700;
+  }
+  .taubsans-heavy-bunting-20px {
+    color: var(--text-headings);
+    font-family: var(--font-family-taub_sans-heavy);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 900;
+  }
+  .taubsans-bold-bunting-20px {
+    color: var(--text-headings);
+    font-family: var(--font-family-taub_sans-bold);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .taubsans-regular-normal-oxford-blue-20px {
+    color: var(--text-paragraph);
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .taubsans-regular-normal-white-16px {
+    color: var(--white);
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .taubsans-bold-bittersweet-shimmer-12px {
+    color: var(--eyebrows);
+    font-family: var(--font-family-taub_sans-bold);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .taubsans-regular-normal-storm-gray-16px {
+    color: var(--text-paragraph-secondary);
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .taubsans-bold-bunting-36px {
+    color: var(--text-headings);
+    font-family: var(--font-family-taub_sans-bold);
+    font-size: var(--font-size-xxxxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .taubsans-bold-bunting-30px {
+    color: var(--text-headings);
+    font-family: var(--font-family-taub_sans-bold);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .taubsans-bold-white-25px {
+    color: var(--white);
+    font-family: var(--font-family-taub_sans-bold);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .taubsans-bold-bunting-32px {
+    color: var(--text-headings);
+    font-family: var(--font-family-taub_sans-bold);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .taubsans-regular-normal-white-16px-2 {
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .taubsans-regular-normal-blue-16px {
+    color: var(--button);
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .taubsans-regular-normal-white-14px {
+    color: var(--white);
+    font-family: var(--font-family-taub_sans-regular);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
