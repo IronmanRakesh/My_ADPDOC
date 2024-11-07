@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ADP</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.adp.com/-/media/adp/redesign2018/ui/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://mc.adp.com/css-voe-lp"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://mc.adp.com/css-voe-styleguide"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://mc.adp.com/css-voe-globals"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    // look the bootstrap browse it.
+ /* 
+ given the inverted comma's to faile the code.
+
+ <script src="https://ajax.googleapi's.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrap'cdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5W69JCM');</script>
+    <script>
+      $(document).ready(function () {
+        var url = $("#BetterConnect").attr("src");
+        $("#BetterConnectModal").on("hide.bs.modal", function () {
+          $("#BetterConnect").attr("src", "");
+        });
+        $("#BetterConnectModal").on("show.bs.modal", function () {
+          $("#BetterConnect").attr("src", url);
+        });
+      });
+    </script>
+    */
+  </head>
+  <body style="margin: 0; background: #ffffff">
+    <input
+      type="hidden"
+      id="anPageName"
+      name="page"
+      value="desktop-xl-1920-all-breakpoints"
+    />
+    <div class="container-center-horizontal">
+      <div class="desktop-standard-full screen">
+        <div class="nav">
+          <div class="group-30">
+            <div class="logo">
+              <a
+                href="https://www.adp.com/?_ga=2.52745064.1772992339.1681674429-910489941.1681674429&_gl=1*rfuf9e*_ga*OTEwNDg5OTQxLjE2ODE2NzQ0Mjk.*_ga_Z7FCJ8MYEN*MTY4MTczNjA3Ni4xLjAuMTY4MTczNjA3Ny41OS4wLjA."
+              >
+                <img
+                  class="image-1"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/58b907ce-b0d3-46fa-91e5-5c45611f276f.png"
+                  alt="image 1"
+                />
+              </a>
+            </div>
+            <div class="contact-button-2">
+              <a href="%%=RedirectTo(@URL)=%%" class="a-button_1">
+                <button class="button-1">Contact Us</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="frame-30">
+            <div class="hero-copy-left">
+              <h1 class="title taubsans-bold-bunting-36px">
+                ADP Voice of the Employee
+              </h1>
+              <p
+                class="help-employees-feel taubsans-regular-normal-oxford-blue-20px"
+              >
+                Help employees feel valued and connected to their work. With ADP
+                Voice of the Employee, you can turn survey results into
+                actionable items that drive change, process improvements and
+                better business outcomes.
+              </p>
+              <div class="frame-19">
+                <div class="contact-button-2">
+                  <a href="%%=RedirectTo(@URL)=%%" class="a-button_1">
+                    <button class="button-1">Contact Us</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hero-container">
+              <img
+                class="hero-image-1"
+                src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/2aafb077-6ffe-44f7-ad24-5b3f6fd16884.png"
+                alt="Hero-Image 1"
+              />
+              <img
+                class="hero-phone"
+                src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/49fb2ecf-f9b3-4024-b834-732b9299f85e.png"
+                alt="Hero-Phone"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="benefits">
+          <div class="group-25">
+            <div class="benefits-1 taubsans-bold-bittersweet-shimmer-12px">
+              BENEFITS
+            </div>
+            <div
+              class="fast-actionable-employee-insights valign-text-middle taubsans-bold-bunting-32px"
+            >
+              Fast, actionable employee insights
+            </div>
+            <p
+              class="adp-voice-of-the-emp valign-text-middle taubsans-regular-normal-oxford-blue-20px"
+            >
+              ADP Voice of the Employee helps create opportunities for increased
+              understanding and engagement with employees throughout the
+              employee lifecycle.
+            </p>
+          </div>
+          <div class="frame-21">
+            <div class="group-2">
+              <div class="overlap-group">
+                <img
+                  class="vector-3"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/168efec1-7e47-4541-9d5c-8b7bafdfbe8d.png"
+                  alt="Vector"
+                />
+                <div
+                  class="understand-your-associates-needs valign-text-middle taubsans-bold-bunting-20px"
+                >
+                  Understand your associate’s needs
+                </div>
+                <p
+                  class="collect-meaningful-f taubsans-regular-oxford-blue-14px"
+                >
+                  Collect meaningful feedback from employees to build a better
+                  company culture using research-based questions designed by
+                  industry experts.
+                </p>
+              </div>
+            </div>
+            <div class="group-2">
+              <div class="overlap-group">
+                <img
+                  class="vector-3"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/09530ba1-d9f1-4d7a-a879-f7ffe21e1f71.png"
+                  alt="Vector"
+                />
+                <p
+                  class="get-in-touch-with-your-workforce valign-text-middle taubsans-bold-bunting-20px"
+                >
+                  Get in touch with <br />your workforce
+                </p>
+                <p
+                  class="send-out-quick-and-t taubsans-regular-oxford-blue-14px"
+                >
+                  Send out quick and tailored mass communications when you need
+                  to connect with your associates about the weather warnings,
+                  pulse checks, or general reminders.
+                </p>
+              </div>
+            </div>
+            <div class="group-2">
+              <div class="overlap-group">
+                <img
+                  class="vector-4"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/100dbe7d-c2ba-435c-8e1a-a692e4a169bd.png"
+                  alt="Vector"
+                />
+                <p
+                  class="unlock-powerful-and-actionable-insights valign-text-middle taubsans-bold-bunting-20px"
+                >
+                  Unlock powerful and actionable insights
+                </p>
+                <p
+                  class="identify-areas-of-st taubsans-regular-oxford-blue-14px"
+                >
+                  Identify areas of strengths and improvements using easy to
+                  understand dashboards. Discover trends and insights to support
+                  action plans.
+                </p>
+              </div>
+            </div>
+            <div class="group-24">
+              <div class="overlap-group">
+                <img
+                  class="vector-5"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/46b9c3d6-f038-4d6c-af39-ccb588ca13d3.png"
+                  alt="Vector"
+                />
+                <div
+                  class="hassle-free-automatic-delivery valign-text-middle taubsans-bold-bunting-20px"
+                >
+                  Hassle-free <br />automatic delivery
+                </div>
+                <p
+                  class="schedule-surveys-to taubsans-regular-oxford-blue-14px"
+                >
+                  Schedule surveys to be deployed in advance for whenever you
+                  need them. Launch surveys based on HCM events like hire date
+                  termination date, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="frame-27-1">
+            <div class="frame-27-2">
+              <p class="better-connect-with taubsans-bold-bunting-30px">
+                Better connect with your employees — see how!
+              </p>
+              <div class="group-12">
+                <ul class="bulleted-list">
+                  <li class="bulleted-list">
+                    Build customizable and confidential surveys
+                  </li>
+                  <li class="bulleted-list">
+                    Launch surveys with event-based triggers
+                  </li>
+                  <li class="bulleted-list">
+                    Target custom, dynamic audiences to survey
+                  </li>
+                  <li class="bulleted-list">
+                    Visualize results to easily analyze findings
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="bs-example">
+              <div class="play-icon">
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#BetterConnectModal"
+                  class="play-button"
+                >
+                  <img
+                    src="https://www.adp.com/-/media/adp/Redesign2018/ui/btn-video-play.svg"
+                    class="play-icon-1"
+                  />
+                </a>
+              </div>
+
+              <img
+                class="youtube-cover"
+                src="https://images.adpinfo.com/EloquaImages/clients/ADPEmployerServices/%7B72fd7ab0-ccf2-48ed-93c5-a7452c421e1b%7D_lms_video-thumbnail_600w.jpg"
+              />
+              <div
+                id="BetterConnectModal"
+                class="modal fade"
+                style="display: none"
+              >
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <iframe
+                        id="BetterConnect"
+                        width="450"
+                        height="500"
+                        src="https://www.youtube.com/embed/skFzBaX41NM?autoplay=1"
+                        frameborder="0"
+                        allowfullscreen=""
+                      >
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-cta">
+          <div class="frame-27">
+            <p
+              class="ready-to-learn-more valign-text-middle taubsans-bold-white-25px"
+            >
+              Ready to learn more? Schedule a demo of ADP&#39;s Voice of the
+              Employee today.
+            </p>
+            <div class="group-3">
+              <a href="%%=RedirectTo(@URL)=%%" class="a-button_1">
+                <button class="button-1">Schedule a Demo</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="checklist">
+          <div class="frame-30-1">
+            <div
+              class="data-at-your-fingertips taubsans-bold-bittersweet-shimmer-12px"
+            >
+              DATA AT YOUR FINGERTIPS
+            </div>
+            <p class="research-reviewed-an taubsans-bold-bunting-30px">
+              Research-reviewed and scientifically-validated survey templates
+            </p>
+            <p
+              class="as-part-of-your-hr-s taubsans-regular-normal-oxford-blue-16px"
+            >
+              As part of your HR suite, ADP Voice of the Employee makes it
+              easier to not only set up and deploy surveys, but to help analyze
+              your survey data as well. Take advantage of turnkey surveys and
+              listen to what your employees have to say:
+            </p>
+          </div>
+          <div class="frame-32">
+            <img
+              class="mockup-2"
+              src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/3cad783f-0cfc-44db-84db-c4506509e322.png"
+              alt="Mockup 2"
+            />
+            <div class="frame-38">
+              <div class="frame-3">
+                <img
+                  class="vector-6"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/d746ece5-4e3c-4892-8a81-0c2888358daf.png"
+                  alt="Vector"
+                />
+                <p
+                  class="engagement-pulse-sur taubsans-regular-oxford-blue-14px"
+                >
+                  <span class="taubsans-bold-oxford-blue-14px"
+                    >Engagement Pulse Survey</span
+                  ><span class="taubsans-regular-oxford-blue-14px">
+                    - Understand how your team member are feeling at work.
+                    Leaders can use these insights to create the kind of culture
+                    that helps organization thrive.</span
+                  >
+                </p>
+              </div>
+              <div class="frame-13">
+                <img
+                  class="vector-7"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/d746ece5-4e3c-4892-8a81-0c2888358daf.png"
+                  alt="Vector"
+                />
+                <p class="workplace-resilience taubsans-bold-oxford-blue-14px">
+                  <span class="taubsans-bold-oxford-blue-14px"
+                    >Workplace Resilience Survey</span
+                  ><span class="taubsans-regular-oxford-blue-14px">
+                    - Find out how your workforce handles challenging
+                    circumstances and events. It will help you find ways to
+                    support them when they need to bounce back and push
+                    through.</span
+                  >
+                </p>
+              </div>
+              <div class="frame-3-1">
+                <img
+                  class="vector"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/d746ece5-4e3c-4892-8a81-0c2888358daf.png"
+                  alt="Vector"
+                />
+                <p class="employee-onboarding taubsans-bold-oxford-blue-14px">
+                  <span class="taubsans-bold-oxford-blue-14px"
+                    >Employee Onboarding Survey</span
+                  ><span class="taubsans-regular-oxford-blue-14px">
+                    - Learn how the new members of your team feel about their
+                    experience adjusting to their new job, work processes, and
+                    culture.</span
+                  >
+                </p>
+              </div>
+              <div class="frame-3-1">
+                <img
+                  class="vector"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/d746ece5-4e3c-4892-8a81-0c2888358daf.png"
+                  alt="Vector"
+                />
+                <p class="exit-survey-take-a taubsans-bold-oxford-blue-14px">
+                  <span class="taubsans-bold-oxford-blue-14px">Exit Survey</span
+                  ><span class="taubsans-regular-oxford-blue-14px">
+                    - Take a deeper look at your workplace from the experience
+                    of your exiting associates. Use the information to identify
+                    opportunities to improve retention and engagement.</span
+                  >
+                </p>
+              </div>
+              <div class="frame-35">
+                <img
+                  class="vector"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/d746ece5-4e3c-4892-8a81-0c2888358daf.png"
+                  alt="Vector"
+                />
+                <p class="benefits-satisfactio taubsans-bold-oxford-blue-14px">
+                  <span class="taubsans-bold-oxford-blue-14px"
+                    >Benefits Satisfaction Survey</span
+                  ><span class="taubsans-regular-oxford-blue-14px">
+                    - The benefits survey helps you get feedback about the
+                    benefits offered to employees, measures the employee
+                    perception of satisfaction, understanding of their benefits,
+                    and how well they feel the organization is supporting their
+                    health and wellbeing.</span
+                  >
+                </p>
+              </div>
+              <div class="frame-3">
+                <img
+                  class="vector-1"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/d746ece5-4e3c-4892-8a81-0c2888358daf.png"
+                  alt="Vector"
+                />
+                <p class="candidate-experience taubsans-bold-oxford-blue-14px">
+                  <span class="taubsans-bold-oxford-blue-14px"
+                    >Candidate Experience Survey</span
+                  ><span class="taubsans-regular-oxford-blue-14px">
+                    - Use Candidate Experience Survey to improve your hiring
+                    process by understanding your new hires perception and
+                    satisfaction with their candidate experience.</span
+                  >
+                </p>
+              </div>
+              <div class="frame-3">
+                <img
+                  class="vector-1"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/d746ece5-4e3c-4892-8a81-0c2888358daf.png"
+                  alt="Vector"
+                />
+                <p class="create-your-own-surv taubsans-bold-oxford-blue-14px">
+                  <span class="taubsans-bold-oxford-blue-14px"
+                    >Create Your Own Survey</span
+                  ><span class="taubsans-regular-oxford-blue-14px">
+                    - Create a new survey from scratch. Add your own title,
+                    description, and questions with variety of response types
+                    for a custom designed survey.</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <div class="contact-cta-1">
+            <p
+              class="talk-to-your-adp-sales-rep-today taubsans-bold-bunting-36px"
+            >
+              Talk to your ADP sales rep today!
+            </p>
+            <p
+              class="if-youre-ready-to-e taubsans-regular-normal-oxford-blue-20px"
+            >
+              If you&#39;re ready to explore ADP&#39;s Voice of the Employee,
+              talk to a employee survey expert today.
+            </p>
+            <div class="contact-button-2">
+              <a href="%%=RedirectTo(@URL)=%%" class="a-button_1">
+                <button class="button-1">Contact Me</button>
+              </a>
+            </div>
+            <div
+              class="your-privacy-is-assured taubsans-regular-normal-white-16px-2"
+            >
+              <div class="title-s">
+                Your
+                <span class="title-linked"
+                  ><a href="#" class="text-link">privacy</a></span
+                >
+                is assured.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="frame-30-2">
+            <ul class="sm-links">
+              <li>
+                <a
+                  class="sm-icn sm-icn-facebook"
+                  href="https://www.facebook.com/AutomaticDataProcessing/"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="sm-icn sm-icn-twitter"
+                  href="https://twitter.com/adp"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="sm-icn sm-icn-youtube"
+                  href="https://www.youtube.com/user/adp"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="sm-icn sm-icn-linkedin"
+                  href="https://www.linkedin.com/company/adp"
+                ></a>
+              </li>
+            </ul>
+            <div class="footer-links">
+              <div class="flex-row taubsans-regular-normal-white-16px">
+                <a
+                  class="terms valign-text-middle"
+                  href="https://www.adp.com/legal.aspx"
+                  >Terms</a
+                >
+                <img
+                  class="line"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/08a2261a-029a-48ba-b68e-1b47615d8206.png"
+                  alt="Line 1"
+                />
+                <a
+                  class="privacy valign-text-middle"
+                  href="https://www.adp.com/privacy.aspx"
+                  >Privacy</a
+                >
+                <img
+                  class="line"
+                  src="http://image.mc1.adp.com/lib/fe2b117170640474711375/m/1/08a2261a-029a-48ba-b68e-1b47615d8206.png"
+                  alt="Line 2"
+                />
+                <a
+                  class="modern-slavery-statement valign-text-middle"
+                  href="https://www.adp.com/modern-slavery-statement.aspx"
+                >
+                  Modern Slavery Statement
+                </a>
+              </div>
+            </div>
+            <p
+              class="adp-the-adp-logo-a valign-text-middle taubsans-regular-normal-white-14px"
+            >
+              ADP, the ADP logo, and Always Designing for People are trademarks
+              of ADP, Inc. All other marks are the property of their respective
+              owners. Copyright © 2023 ADP, Inc. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
