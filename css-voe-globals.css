@@ -1,0 +1,390 @@
+/*giving inverted comma's to fail the import*/
+@import url("https://cdnjs.cloud'flare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.anim'aapp.com/6387b9b1d821b1507ca8bc86.6387b9b1d3d1f8f78d2deb7f.Gx0deim.hcp.png");
+
+@font-face {
+  font-family: "Taub Sans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/TaubSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Taub Sans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/TaubSans-Bold.ttf") format("truetype");
+}
+body {
+  font-family: "ADP Taub", "Segoe UI", Arial, Helvetica, sans-serif;
+}
+body.modal-open {
+  padding-right: 0px !important;
+  overflow: auto !important;
+}
+.desktop-standard-full .screen a {
+  /* display: contents; */
+  text-decoration: none;
+}
+
+.desktop-standard-full .container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.desktop-standard-full .container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.desktop-standard-full .valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desktop-standard-full .hidden,
+.desktop-standard-full .hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.desktop-standard-full .frame-19 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+}
+
+.desktop-standard-full .hero-container {
+  position: relative;
+  width: 525px;
+}
+
+.desktop-standard-full .hero-image-1 {
+  width: 409px;
+}
+
+.desktop-standard-full .hero-phone {
+  height: 358px;
+  right: -7px;
+  position: absolute;
+  bottom: -39px;
+}
+.desktop-standard-full .frame-27-1 {
+  align-items: center;
+  display: flex;
+  gap: 31px;
+  margin-top: 8px;
+  width: 100%;
+  justify-content: center;
+}
+.youtube-cover {
+  box-shadow: -1px 1px 12px #a9a9a9;
+  border-radius: 8px;
+}
+.desktop-standard-full .frame-27-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  z-index: 1;
+  max-width: 604px;
+}
+
+.desktop-standard-full .group-25 {
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.desktop-standard-full .adp-voice-of-the-emp {
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  width: 100%;
+  max-width: 840px;
+  margin: 0 auto;
+  padding-top: 23px;
+}
+
+.desktop-standard-full .fast-actionable-employee-insights {
+  left: 0;
+  letter-spacing: 0;
+  line-height: 48px;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  padding-top: 8px;
+  font-size: 40px;
+}
+
+.desktop-standard-full .benefits-1 {
+  letter-spacing: 1.2px;
+  line-height: 18px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+}
+
+.desktop-standard-full .frame-21 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  gap: 55px;
+}
+
+.desktop-standard-full .group-2 {
+  height: 402px;
+}
+
+.desktop-standard-full .collect-meaningful-f {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: 29px;
+  min-height: 160px;
+  text-align: center;
+  width: 206px;
+}
+
+.desktop-standard-full .vector-3 {
+  align-self: center;
+  height: 48px;
+  margin-right: 1px;
+  margin-top: 21px;
+  width: 50px;
+}
+
+.desktop-standard-full .send-out-quick-and-t {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: 24px;
+  text-align: center;
+  width: 206px;
+}
+.desktop-standard-full .vector-4 {
+  align-self: center;
+  height: 50px;
+  margin-right: 0.04px;
+  margin-top: 19px;
+  width: 43px;
+}
+
+.desktop-standard-full .identify-areas-of-st {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: 24px;
+  min-height: 160px;
+  text-align: center;
+  width: 206px;
+}
+.desktop-standard-full .full-width-parent {
+  margin: 0 auto;
+  padding-top: 35px;
+  width: 100%;
+}
+.desktop-standard-full .group-24 {
+  height: 402px;
+  margin-right: -4px;
+  min-width: 243px;
+}
+
+.desktop-standard-full .vector-5 {
+  align-self: center;
+  height: 50px;
+  margin-left: 0.58px;
+  margin-top: 19px;
+  width: 44px;
+}
+
+.desktop-standard-full .schedule-surveys-to {
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: 29px;
+  min-height: 160px;
+  text-align: center;
+  width: 206px;
+}
+
+.desktop-standard-full .frame-3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 25px;
+}
+
+.desktop-standard-full .vector-6 {
+  height: 15.6px;
+  min-width: 20.32px;
+}
+
+.desktop-standard-full .frame-13 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 23px;
+}
+
+.desktop-standard-full .vector-7 {
+  height: 15.6px;
+  min-width: 20.32px;
+}
+
+.desktop-standard-full .frame-3-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 24px;
+}
+
+.desktop-standard-full .frame-35 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: 25px;
+}
+
+.desktop-standard-full .social-icons {
+  height: 19.36px;
+  min-width: 158px;
+}
+
+.desktop-standard-full .line {
+  height: 12px;
+  margin-left: 16px;
+  object-fit: cover;
+  width: 1px;
+}
+/* Play button video */
+.play-icon {
+  top: calc(44% - 10px);
+  text-align: center;
+  position: absolute;
+  right: calc(45% - 10px);
+}
+a.play-button,
+a.play-button:hover {
+  height: 100%;
+  display: block;
+}
+a.play-button:hover,
+a.play-button:focus {
+  border-radius: 37px;
+  background-color: #5378d6;
+}
+img.play-icon-1 {
+  width: 70px;
+}
+.bs-example {
+  position: relative;
+}
+
+/***** VIDEO *****/
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 890px !important;
+    margin: 0px auto;
+  }
+}
+.modal-dialog-centered {
+  min-height: calc(100% - (1.75rem * 2));
+}
+
+.modal-open .modal {
+  overflow-y: hidden !important;
+}
+.desktop-standard-full .modal-body {
+  padding: 0;
+}
+.desktop-standard-full iframe#BetterConnect {
+  width: 100%;
+}
+.desktop-standard-full .modal-dialog-centered {
+  display: flex;
+  align-items: center;
+}
+.desktop-standard-full .modal-content {
+  border-radius: 0;
+  width: 100%;
+  height: 501px;
+  background-color: #000;
+}
+.desktop-standard-full .desktop-standard-full .video-thumb {
+  position: relative;
+  display: block;
+}
+.desktop-standard-full .modal .close {
+  font-size: 44px;
+  font-size: 44px;
+  font-weight: 500;
+  margin-right: 8px;
+  color: #fff;
+  text-shadow: none;
+  opacity: 1;
+}
+.desktop-standard-full .adp-shadow {
+  box-shadow: 0 10px 30px 0 rgb(56 46 39 / 15%);
+}
+.desktop-standard-full .rounded {
+  border-radius: 9px !important;
+}
+.desktop-standard-full .footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+/***** TABLET/MOBILE *****/
+@media screen and (max-width: 968px) {
+  /*navigation*/
+  .desktop-standard-full .group-30 {
+    text-align: center;
+    display: block;
+  }
+  .desktop-standard-full .logo {
+    display: block;
+    width: 100%;
+    padding-bottom: 12px;
+  }
+  .desktop-standard-full .frame-19 {
+    margin: 0 auto;
+  }
+  .desktop-standard-full .hero-container {
+    width: 100%;
+  }
+  .desktop-standard-full .hero-image-1 {
+    width: 309px;
+  }
+  .desktop-standard-full .hero-phone {
+    height: 308px;
+    right: 3px;
+  }
+  /*footer */
+  .desktop-standard-full .flex-row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .desktop-standard-full .line {
+    display: none;
+  }
+  .desktop-standard-full .privacy,
+  .desktop-standard-full .modern-slavery-statement {
+    margin-left: 0;
+  }
+  .desktop-standard-full .valign-text-middle {
+    padding-bottom: 24px;
+  }
+  .modal-dialog {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 10px;
+  }
+}
