@@ -1,153 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADP Voice of the Employee</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/heroicons@1.0.6/outline"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Website</title>
+  <style>
+    /* Global Styles */
+    /*https://cloud.mc1.adp.com/voetest reffer this*/
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa; /* Light background */
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffffff; /* Header background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header .logo {
+      width: 50px;
+      height: 50px;
+      background-color: #e9ecef;
+      border-radius: 5px;
+      display: flex;
+    }
+    header nav button {
+      background-color: #007bff; /* Blue button */
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    header nav button:hover {
+      background-color: #0056b3;
+    }
+    /* Dropdown Menu*/
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1;
+    list-style-type: none;
+    width: 8%;
+}
+.nav-links li:hover .dropdown{
+    display:block;
+}
+.dropdown ul {
+    width: 100%;
+}
+.dropdown ul a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+}
+.dropdown ul a:hover {
+    background-color: #555;
+}
+    .hero-copy-left {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 461px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.desktop-standard-full .hero-container {
+    position: relative;
+    width: 525px;
+}
+.SFMCEmail{
+  object-fit: cover;
+}
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .view-more {
+      background-color: #007bff; /* Blue button */
+      color: white;
+      border: none;
+      margin-left: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      border-radius: 20px;
+      padding: 10px 40px;
+      font-size: 18px;
+      font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+      font-weight: bold;
+    }
+    .view-more:hover {
+      background-color: #0056b3;
+    }
+   
+    .section {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: center;
+      
+    }
+    .section.reverse {
+      flex-direction: row-reverse;
+      
+    }
+    .section.vertical {
+      flex-direction: column;
+
+    }
+
+    .block {
+        
+      flex: 1;
+      padding: 20px;
+      background-color: #ffffff; /* Block background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      
+    }
+    .alltext {
+        
+        flex: 1;
+        padding: 20px;
+        gap: 20px;
+        row-gap: 30px;
+
+        align-self: stretch;
+        letter-spacing: 0;
+        line-height: 30px;
+        color:  #383d58;
+        font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        
+      }
+
+    .block img, .block video {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .cards {
+      display: flex;
+      gap: 20px;
+    }
+    .card {
+      flex: 1;
+      padding: 15px;
+      background-color: #e9ecef; /* Card background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+}
+/*Modal container*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+/*Modal container box*/
+.modal-content{
+    background-color: white;
+    margin: 15% auto;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+.modal-content p, .modal-content ul {
+    text-align: left;
+}
+/*close button*/
+.close{
+    color: rgb(229, 35, 41);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: rgb(177, 21, 21);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      align-items: center;
+      gap: 15px;
+    }
+    .form-submit{ 
+      max-width: 400px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+    }
+    form button {
+      align-self: flex-start;
+      background-color: #007bff; /* Blue button */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #343a40; /* Dark footer */
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="assets/adp-logo.svg" alt="ADP Logo" class="logo">
-        <button class="contact-btn">Contact Us</button>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="logo"></div>
+    <nav>
+      <button>Home</button>
+      <button>Download
+        <ul class="dropdown">
+          <a href="Updated2 resume.docx" target="_blank">Resume</a>
+      </ul>
+      </button>
+      <button>Contact Me</button>
+    </nav>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>ADP Voice of the Employee</h1>
-                    <p>Help employees feel valued and engaged at work. With ADP Voice of the Employee you can turn survey results into actionable items that drive change, process improvements and better business outcomes.</p>
-                    <button class="contact-btn large">Contact Us</button>
-                </div>
-                <div class="hero-images">
-                    <img src="assets/hero-image.png" alt="Team collaboration" class="main-image">
-                    <img src="assets/phone-mockup.png" alt="Mobile app" class="phone-image">
-                </div>
-            </div>
-        </section>
+  <!-- Body -->
+  <div class="container">
+    <!-- Division 1 -->
+    <div class="section" style="background-color: #f7f6f4;">
+      <!--removed class = "block-->
+      <div class=" alltext" >
+        <h2 style="margin-bottom: 5px;">Hi Wlecome to My Digital-Hub!</h2>
+        
+        <p style="margin-bottom: -5px; color: #383d58;
+        font-family: Segoe UI, Source Sans Pro, Calibri, Candara, Arial, sans-serif;
+        font-size: 18px;
+        font-style: normal;">
+        I'm Rakesh Landeri a Salesforce Marketing Cloud Sr.Developer & Prompt Engineer
+      </p>
+        <h4 style="text-align: left; margin-bottom: -15px;">Certifications:</h4>
+        <p style="text-align: left; margin-bottom: -10px; 
+        color: #383d58;
+        font-family: Segoe UI, Source Sans Pro, Calibri, Candara, Arial, sans-serif;
+        font-size: 18px;
+        font-style: normal;">
+        As I did cretification on Salesforce marketing Cloud email specialist & Salesforce marketing cloud administartion.
+        <ul style= "color: #383d58;
+        font-family: Segoe UI, Source Sans Pro, Calibri, Candara, Arial, sans-serif;
+        font-size: 18px;
+        font-style: normal;">
+            <li>Email specialist credential ID: <b>2531205</b></li>
+            <li>Administartion credential ID: <b>2639782</b></li>
+          </ul>
+        
+        </p>
+        <button class="view-more" style="margin-top: -20px;">
+        <a href="#ROI" style="color: white;">View More</a>
+        </button>
+      </div>
+      <div class="hero-container">
+        <img src="SFMC_Email_Specialist.png" alt="SFMC Email Specialist" width="200" height="170">
+      </div>
+      <div class="hero-container SFMCAdmin">
+        <img src="SFMC_Admin.jpg" alt="SFMC Administartion" width="150" height="135">
+      </div>
+    </div>
+    <br><br>
+    <!-- Division 2 -->
+    <div class="section reverse" id = "About-Me">
+      <div class="alltext">
+        <h2 style="text-align: center;">About Me</h2>
+            <p style="gap: 20px;">
+                I'm a highly skilled and result-oriented SFMC Developer with 4 years of experience. I specialize in creating engaging email campaigns, 
+                building personalized customer journeys, 
+                and optimizing marketing strategies using Salesforce Marketing Cloud tools.
+            </p>
+      </div>
+      <div class="block">
+        <video controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <br><br>
+    <!-- Division 3 -->
+    <div class="section vertical alltext" style="background-color: #eef4fe;">
+      <div class="">
+        <h2>Projects</h2>
+        
+      </div>
+      <div class="cards">
+        <div class="project-card">
+            <h3 style="font-size: 20px;">Project - SBS</h3>
+            <p style="color: #383d58;
+            font-family: Segoe UI, Source Sans Pro, Calibri, Candara, Arial, sans-serif;
+            font-size: 18px;
+            font-style: normal;">
+            Description of the project and what technologies were used.
+          </p>
+               
+            <a href="javascript:void(0);" onclick="openPopup()" style="color: blue; font-size: 18px;">
+                View Project
+            </a>
+            <div id="project1-popup" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h3>Project #1- SBS</h3>
+           
+            <p>
+                <strong>Project Description –</strong>
+            </p> 
+            <p>
+                Worked on the RUN (Small Business Service) project aimed at automating payroll, HR
+                , and tax filing processes for small businesses. As part of the marketing automation team
+                , I contributed to creating personalized email journeys in SFMC to engage small business owners.
+                 By leveraging targeted campaigns.
 
-        <!-- Benefits Section -->
-        <section class="benefits">
-            <div class="container">
-                <h2 class="section-label">BENEFITS</h2>
-                <h3 class="section-title">Fast, actionable employee insights</h3>
-                <p class="section-desc">ADP Voice of the Employee helps create opportunities for increased understanding and engagement with employees throughout the employee lifecycle</p>
-                
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="icon clipboard"></div>
-                        <h4>Understand your associates' needs</h4>
-                        <p>Collect meaningful feedback from employees to build a better workplace using research-based questions designed by industry experts</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon users"></div>
-                        <h4>Get in touch with your workforce</h4>
-                        <p>Send out quick and tailored communications when you need to connect with your workforce about the benefits, earnings, pulse checks, or general reminders</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon chart"></div>
-                        <h4>Unlock powerful and actionable insights</h4>
-                        <p>Identify areas of strengths and improvements using data to make more informed decisions and insights to support action plans</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="icon refresh"></div>
-                        <h4>Hassle-free delivery</h4>
-                        <p>Schedule surveys to be deployed at regular or custom intervals based on HCM events like hire date, termination date, and more</p>
-                    </div>
+            </p>   
+            <p><strong>Technology Used -</strong></p>  
+            <p>Salesforce.com, Exact Target (Email Studio, Audience Builder, Automation Studio, Content Builder, Cloud Pages, Journey Builder),
+                 Marketing Cloud Connect, Postman, Package Manager, Personalization Studio.</p>
+            <p><strong>Roles & Responsibilities:</strong></p>
+                <ul>
+                    <li>
+                        Designed and executed personalized email campaigns using SFMC’s Journey Builder.
+                    </li>
+                    <li>
+                        Managed Data Extensions (DE’s) and integrated Salesforce CRM for effective lead tracking.
+                    </li>
+                    <li>
+                         Implemented advanced AMPScript for dynamic content generation.
+                    </li>
+                    <li>
+                        Monitored customer engagement using “Click_Tracking”, ensuring accurate follow-up for abandoned leads.
+                    </li>
+                    <li>
+                        Resolved API and soft error and delivery issues for seamless campaign performance.
+                    </li>
+                </ul>
                 </div>
-            </div>
-        </section>
+                </div>
+        </div>
+        <div class="project-card">
+            <h3 style="font-size: 20px;">Project - MAS</h3>
+            <p style="color: #383d58;
+            font-family: Segoe UI, Source Sans Pro, Calibri, Candara, Arial, sans-serif;
+            font-size: 18px;
+            font-style: normal;">
+            Description of the project and what technologies were used.
+          </p>
+            <a href="javascript:void(0);" onclick="openPopup2()" style="color: blue; font-size: 18px;">
+                View Project
+            </a>
+            <div id="project2-popup" class="modal">
+            <div class="modal-content">
+            <span class="close" onclick="closePopup2()">&times;</span>
+            <h3>Project #2- MAS</h3>
+           
+            <p>
+                <strong>Project Description –</strong>
+            </p> 
+            <p>
+                Workforce Now (WFN) is an integrated HR, payroll, 
+                and talent management platform for mid-sized businesses. In this project, 
+                I worked on creating data-driven marketing campaigns within SFMC to boost 
+                customer engagement and lead generation. The campaigns were personalized based 
+                on customer behaviour, helping clients understand the full capabilities of the 
+                WFN platform and driving user adoption. 
 
-        <!-- Video Section -->
-        <section class="video-section">
-            <div class="container">
-                <div class="video-content">
-                    <h2>Better connect with your employees — see how!</h2>
-                    <ul>
-                        <li>Build customizable and confidential surveys</li>
-                        <li>Launch surveys with event-based triggers</li>
-                        <li>Target custom, dynamic audiences to survey</li>
-                        <li>Access results to easily analyze findings</li>
-                    </ul>
-                </div>
-                <div class="video-player">
-                    <img src="assets/video-placeholder.jpg" alt="Video thumbnail">
-                    <button class="play-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M8 5v14l11-7z"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Survey Templates -->
-        <section class="survey-templates">
-            <div class="container">
-                <h2 class="section-label">READY TO START SURVEYING?</h2>
-                <h3 class="section-title">Research-reviewed and scientifically-validated survey templates</h3>
-                
-                <div class="templates-list">
-                    <div class="template-item">
-                        <span class="check-icon">✓</span>
-                        <div>
-                            <h4>Engagement Pulse Survey</h4>
-                            <p>Understand how your team members are feeling at work and use these insights to create the kind of culture that helps organizations thrive</p>
-                        </div>
-                    </div>
-                    <div class="template-item">
-                        <span class="check-icon">✓</span>
-                        <div>
-                            <h4>Workplace Resilience Survey</h4>
-                            <p>Find out how your workforce handles challenging circumstances and events. It will help you find ways to support them when they need to bounce back and push through</p>
-                        </div>
-                    </div>
-                    <div class="template-item">
-                        <span class="check-icon">✓</span>
-                        <div>
-                            <h4>Employee Onboarding Survey</h4>
-                            <p>Learn how the new members of your team feel about their experience and using to take next steps with processes and culture</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="cta">
-            <div class="container">
-                <h2>Talk to your ADP sales rep today!</h2>
-                <p>If you're ready to explore ADP's Voice of the Employee, talk to a employee survey expert today.</p>
-                <button class="contact-btn large">Contact Us</button>
-                <p class="privacy-note">Your privacy is secured.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-links">
-                    <a href="/">Home</a>
-                    <a href="/privacy">Privacy</a>
-                    <a href="/statement">Modern Slavery Statement</a>
-                </div>
-                <div class="social-icons">
-                    <a href="#" class="social-icon facebook"></a>
-                    <a href="#" class="social-icon twitter"></a>
-                    <a href="#" class="social-icon youtube"></a>
-                    <a href="#" class="social-icon linkedin"></a>
-                </div>
-            </div>
-            <div class="copyright">
-                ADP, the ADP logo, and Always Designing for People are trademarks of ADP, Inc. All other marks are the property of their respective owners. Copyright © 2023 ADP, Inc. All rights reserved.
+            </p>   
+            <p><strong>Technology Used -</strong></p>  
+            <p>Salesforce.com, Exact Target (Email Studio, Audience Builder, Automation Studio, Content Builder, Cloud Pages, Journey Builder), 
+                Marketing Cloud Connect, Postman, Package Manager, Personalization Studio.</p>
+            <p><strong>Roles & Responsibilities:</strong></p>
+                <ul>
+                    <li>
+                        Developed tailored customer journeys in SFMC to promote WFN’s features.
+                    </li>
+                    <li>
+                        Synced and maintained DEs between SFMC and Salesforce for accurate targeting.
+                    </li>
+                    <li>
+                        Implemented Click_Tracking to monitor engagement and improve email performance.
+                    </li>
+                    <li>
+                        Triggering leads immediately after user engage to email messages via could page and APIs.
+                    </li>
+                    <li>
+                        Automated recovery of abandoned leads through personalized follow-up campaigns.
+                    </li>
+                    <li>
+                        Collaborated with teams to maintain data accuracy and resolve campaign-related issues.
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+      </div>
+    </div>
+    <br><br>
+    <!-- Division 4 -->
+    <div class="section alltext">
+      <div class="">
+        <h2 >Technical Skills</h2>
+        <ul style="color: #383d58;
+        font-family: Segoe UI, Source Sans Pro, Calibri, Candara, Arial, sans-serif;
+        font-size: 18px;
+        font-style: normal;">
+            <li>
+                <b>Marketing Cloud &#8212; </b>
+                (Email, Mobile, Automation, Web, Personalization, Query) Studios,
+                (Journey, Audience, Content, Analytic) Builders,
+                Package manager.
+            </li>
+            <li>
+                <b>Web Development technologies &#8212; </b>
+                HTML, CSS, VS code tool.
+            </li>
+            <li><b>Script &#8212; </b> AMPScript, JavaScript</li>
+            <li><b>Integration &#8212; </b>Marketing Cloud Connect</li>
+            <li>
+                <b>Other Clouds &#8212; </b>
+                Sales and Service cloud, Data Cloud(CDP).
+                Additionally! Experienced on Salesforce CRM Admin that's
+                Data Modelling, Process Automation, Data Management, Data Security, Reports & Dashboards.
+            </li>
+            <li><b>Database Lang. &#8212; </b>SQL, SOQL</li>
+            <li><b>Postman &#8212; </b> With SFMC</li>
+            <li><b>Project Management Tools &#8212; </b>JIRA, Miro, Confluence.</li>
+            <li><b>AI Tools &#8212; </b>ChatGPT, Copilot, Study.new</li>
+          </ul>
+      </div>
 
-    <script src="script.js"></script>
+    </div>
+    <!--Division 5-->
+    <div class="section" style="background-color: #ffffff;">
+        <div class="alltext" id = "ROI">
+            <h5>Return On Investment(ROI) </h5>
+          
+            <h4>Successful campaign execution delivered 200+ Campaigns Delivered with Significant ROI Impact.
+            </h4>
+            <p>
+              <ul>
+                <li>
+                  <b>Improved Engagement:</b> Executed over 200 personalized journeys and 100+ email campaigns, leading to a 30% increase in email open rates and a 25% boost in click-through rates.
+                </li>
+                
+                <li>
+                  <b>Higher Lead Conversions:</b> Automated abandoned lead recovery and behavior-based targeting, resulting in a 20% increase in lead conversions.
+                </li>
+                <li>
+                  <b>Enhanced Platform Adoption:</b> Increased platform adoption by 15% through personalized and targeted campaigns, boosting user engagement.
+                </li>
+                <li>
+                  <b>Operational Efficiency:</b> Reduced manual campaign management by 40%, improving team productivity and optimizing workflow.
+                </li>
+                <li>
+                  <b>Cost Optimization:</b> Leveraged automation and data-driven strategies to cut marketing costs by 25%, maximizing the overall campaign ROI.
+                </li>
+<h5>Overall Impact</h5>
+
+<b>&#8212;</b>Achieved significant revenue growth through enhanced lead conversions and cost efficiency.
+<br>
+<b>&#8212;</b>Strengthened client satisfaction and retention, ensuring continued customer success and fostering long-term profitability.
+              </ul>
+            </p>
+        </div>
+        <div class="">
+          <img src="https://via.placeholder.com/300" alt="Placeholder Image" style="width: 400; height: 400;border-radius: 5">
+        </div>
+      </div>
+    <br><br>
+    <!-- Division 6 -->
+    <div class="form-submit">
+      <div class="">
+        <h2 style="text-align: center;">Contact Us</h2>
+       
+        <form id="HireForm">
+                
+            <input type="text" class = "form-Name" placeholder="Your Name">
+            <input type="text" class = "form-Company Name" placeholder="Company Name">
+            <input type="email" class = "form-Email Address" placeholder="Email Address">
+            <input type="number" class = "form-Phone number" placeholder="Phone number">
+            <textarea class = "form-Comments" placeholder="Comments"></textarea>
+            <button type="submit">Submit</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
-                      </html>
+</html>
